@@ -1,0 +1,206 @@
+@import "colors.css";
+@import "georgia-font.css";
+
+:root {
+    --column2-offset: 287px;
+    --column3-offset: 54px;
+    --max-column-offset: calc(max(var(--column2-offset), var(--column3-offset)))
+}
+
+.logo-green {
+    fill: var(--accent-color)
+}
+
+.logo-white {
+    fill: var(--text-white);
+}
+
+.text-accented {
+    color: var(--accent-color);
+}
+
+.headerText--small {
+    font-size: 50px;
+}
+
+.button-accented {
+    display: flex;
+    width: fit-content;
+    color: var(--text-white);
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    transition: color, background-color 0.15s;
+    padding: 20px 50px;
+}
+
+.button-accented:hover {
+    color: var(--text-white);
+    background-color: var(--accent-hover-color);
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 144px 0;
+}
+
+.contentContainer--unpadded {
+    padding: 0 0;
+}
+
+.contentContainer_contentBlock {
+    width: 70%;
+    display: flex;
+}
+
+.contentBlock--column {
+    flex-direction: column;
+}
+
+.contentBlock--421px {
+    width: 421px;
+}
+
+.contentBlock--80pc {
+    width: 80%
+}
+
+.contentBlock--cgap31px {
+    column-gap: 31px;
+}
+
+.contentBlock--alignCenter {
+    align-items: center;
+}
+
+.textBlock {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    gap: 40px;
+}
+
+.menuList {
+    display: flex;
+    list-style: none;
+}
+
+.menuList--vertical {
+    flex-direction: column;
+}
+
+.body_footer_menuList {
+    gap: 60px;
+}
+
+.header {
+    height: 91vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(90deg, var(--background-white), rgba(0, 0, 0, 10%) 60%), url("../res/header-photo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section--green {
+    color: var(--text-white);
+    background-color: var(--background-green);
+}
+
+.howWorksGrid {
+    margin-bottom: var(--max-column-offset);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 0fr) 0fr;
+    grid-column-gap: 52px;
+    grid-row-gap: 60px;
+}
+
+/*divs (1,2), (5,6), (9,10) overlay*/
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.div2 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.div3 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.div4 {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.div5 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.div6 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.div7 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.div8 {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.div9 {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.div10 {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.div11 {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.div12 {
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+.div1, .div2, .div5, .div6, .div9, .div10 {
+    display: flex;
+    align-items: flex-end;
+}
+
+.howWorksGrid_column2--offset {
+    position: relative;
+    top: var(--column2-offset);
+}
+
+.howWorksGrid_column3--offset {
+    position: relative;
+    top: var(--column3-offset);
+}
+
+.howWorks_bgHeadline {
+    color: var(--accent-color-transparent);
+    line-height: 1;
+    font-size: 150px;
+    font-family: "Georgia Regular", sans-serif;
+}
+
+.howWorks_fgHeadline {
+    padding-left: 88px;
+    font-size: 30px;
+}
+
+.image {
+    border-radius: 12px;
+}
+
+.imageCard {
+    transform: scale(80%) translateY(-10%);
+}

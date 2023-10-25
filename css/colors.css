@@ -1,0 +1,10 @@
+:root {
+    --accent-color: #01996D;
+    --accent-hover-color: #0fb487ff;
+    --accent-color-transparent: rgba(1, 153, 109, 0.2);
+    --background-white: #fff;
+    --background-green: #245852;
+    --text-white: #fff;
+    --text-grey: #424242;
+    --text-black: #000;
+}
